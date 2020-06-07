@@ -168,3 +168,48 @@ Dates and season of each hemp trial conducted at TREC, Homestead, FL.
 		- Block 17
 			- Row 3 - Column C
 			- Row 4 - Column B
+			
+`PilotPlot1_summer_2019_Flowering.csv`: Flowering data file of the first pilot plot.
+- `Block`: Block composed of 8 varieties, which was replicated 4 times
+- `Row`: Field rows numbered ascendingly from south to north.
+- `Column`: Field columns ordered alphabetically from east to west.
+- `Induc_perc`: Percentage of flowering induction
+- `MaleOpen_perc`: Percent of male plants with over half of flowers opened.
+- `FemaleOpen_perc`: Percent of female plants with over half of flowers opened
+- `MonoOpen_perc`: Percent of monoecious plants with over half of female flowers opened.
+- `SeedHard_perc`: Percent of seed hardening.
+- Notes:   - Blanks due to missing data
+	- Block 3 - Row 2 - Column A: Plants did not emerge.
+	- Block 3 - Row 2 - Column C: Experimental unit was mixed with adjacent variety.
+
+`VarietyTrial1_summer_2019_Flowering.csv`: Flowering data of the first variety trial
+- `Block`: Block composed of 19 varieties, which was replicated 4 times
+	- Block 9 is composed of 4 additional fiber varieties replicated 4 times in the same block.
+- `Row`: Field rows numbered ascendingly from south to north.
+- `Column`: Field columns ordered alphabetically from east to west.
+- `Induc_perc`: Percentage of flowering induction
+- `MaleOpen_perc`: Percent of male plants with over half of flowers opened.
+- `FemaleOpen_perc`: Percent of female plants with over half of flowers opened
+- `MonoOpen_perc`: Percent of monoecious plants with over half of female flowers opened.
+- `SeedHard_perc`: Percent of seed hardening.
+- Notes:   - Blanks due to missing data
+	- Block 6, 7, and 8 - Row 5 - Column D: Left blank on purpose
+	- From Jun 19th on, Block 7 - Row 2 - Column A: Experimental unit looked as mixed planting/missed data
+	- On June 26th, Block 7 - Row 3 - Column A : Missed data
+	- On Aug 12th, Block 6 - Row 4 - Column B and C: Missed data on SeedHard_perc.
+	
+`PilotPlot2_summer_2019_Flowering.csv`: Flowering data file of the second pilot plot.
+- `Block`: Block composed of 8 varieties, which was replicated 4 times
+- `Row`: Field rows numbered ascendingly from south to north.
+- `Column`: Field columns ordered alphabetically from east to west.
+- `Induc_perc`: Percentage of flowering induction
+- `MaleOpen_perc`: Percent of male plants with over half of flowers opened.
+- `FemaleOpen_perc`: Percent of female plants with over half of flowers opened
+- `MonoOpen_perc`: Percent of monoecious plants with over half of female flowers opened.
+- `SeedHard_perc`: Percent of seed hardening.
+-Notes:   -Blanks due to missing data
+	- From Jun 19th on, the following blocks were not measured due to  
+		- Block 1 - Row 1 - Column D 
+		- Block 3 - Row 2 - Column C
+	-On July 29th, Block 3 - Row 1 - Column A: Missed data
+	
