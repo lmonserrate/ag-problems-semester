@@ -12,4 +12,5 @@ Puma3_PP1_H <- filter (PP1_H, Block %in% c(1, 2, 3, 4), Row %in% c(1, 4, 1, 4) &
 Puma3_PP1_HO <- filter (Puma3_PP1_H, Row %in% c(1, 4, 1, 4), Column %in% c("B", "C", "B", "D")) 
 view(Puma3_PP1_H)
 Puma3_PP1_HO <- filter (Puma3_PP1_H, Block %in% c(1, 2, 3, 4) & Row %in% c(1, 4, 1, 4) & Column %in% c('B', 'C', 'B', 'D'))
-Puma3_PP1_HO <- filter (Puma3_PP1_H, 
+by_day <- group_by(PP1_H, Year, Month, Day)
+Height_Over_Time <- summarize(by_day, Average = mean(Height_cm, na.rm = TRUE), SD = sd(Height_cm, na.rm = TRUE))
