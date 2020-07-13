@@ -1,0 +1,29 @@
+
+             Df  Sum Sq Mean Sq F value Pr(>F)    
+Variety       7 1404802  200686   88.76 <2e-16 ***
+Residuals   253  572055    2261                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+------------------------------------------------------------------------
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-112.6  -24.6   -0.6   27.4  128.8 
+
+Coefficients:
+                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   298.925      7.518  39.759  < 2e-16 ***
+VarietyBerryBlossom          -149.392     11.485 -13.008  < 2e-16 ***
+VarietyCarmagnolaSelezionata -163.425     13.022 -12.550  < 2e-16 ***
+VarietyCherryBlossomxTI      -169.877     12.814 -13.257  < 2e-16 ***
+VarietyEletta                -171.258     11.485 -14.912  < 2e-16 ***
+VarietyPuma-3                 -77.300     10.633  -7.270 4.47e-12 ***
+VarietyTygra                 -217.325     10.633 -20.439  < 2e-16 ***
+VarietyYuma-2                 -51.775     10.633  -4.869 1.97e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 47.55 on 253 degrees of freedom
+Multiple R-squared:  0.7106,	Adjusted R-squared:  0.7026 
+F-statistic: 88.76 on 7 and 253 DF,  p-value: < 2.2e-16
