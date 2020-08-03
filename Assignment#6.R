@@ -12,7 +12,7 @@ ggplot(data = Height_Over_Time, mapping = aes (x = Date , y = Average)) +
   geom_point() +
   geom_smooth()
 data2 <- read_csv("~/ag-problems-semester/PlotVarietyFile.csv")
-TotalData <- merge(data, data2, by=c("Column", "Row", "Block"))
+TotalData <- merge(data, data2, by = c("Column", "Row", "Block"))
 PP1_H <- select(TotalData, Year, Month, Day, Block, Row, Column, Rep, Height_cm, Variety)
 Puma3_PP1_H <- filter(PP1_H, Variety == "Puma-3")
 Puma3_by_day <- group_by(Puma3_PP1_H, Year, Month, Day)

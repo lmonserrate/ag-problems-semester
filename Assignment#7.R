@@ -11,7 +11,7 @@ Height_Over_Time <- Height_Over_Time %>%
 ggplot(data = Height_Over_Time, mapping = aes (x = Date , y = Average)) +
   geom_point() +
   geom_smooth()
-data2 <- read_csv("~/ag-problems-semester/PlotVarietyFile.csv")
+data2 <- read_csv("~/GitHub/ag-problems-semester/PlotVarietyFile.csv")
 TotalData <- merge(data, data2, by=c("Column", "Row", "Block"))
 PP1_H <- select(TotalData, Year, Month, Day, Block, Row, Column, Rep, Height_cm, Variety)
 Puma3_PP1_H <- filter(PP1_H, Variety == "Puma-3")
@@ -44,7 +44,7 @@ ggplot(data = PP1_H_by_date, mapping = aes (x = Date , y = Average)) +
         title = element_text(family = "Times", face = "plain", size = 20), 
         plot.subtitle = element_text(family = "Times", face = "plain", size = 14))
 PP2data <- read_csv("~/GitHub/ag-problems-semester/VarietyTrial1_summer_2019_PlantHeight-SexRatioPP.csv")
-PP2_TotalData <- merge(PP2data, data2, by=c("Column", "Row", "Block"))
+PP2_TotalData <- merge(PP2data, data2, by = c("Column", "Row", "Block"))
 PP2_H <- select(PP2_TotalData, Year, Month, Day, Block, Row, Column, Rep, Height_cm, Variety)
 PP2_H_by_day <- PP2_H %>%
   group_by(Year, Month, Day, Variety) %>%
@@ -67,7 +67,7 @@ ggplot(data = PP2_H_by_date, mapping = aes (x = Date , y = Average)) +
         title = element_text(family = "Times", face = "plain", size = 20), 
         plot.subtitle = element_text(family = "Times", face = "plain", size = 14))
 VTdata <- read_csv("~/GitHub/ag-problems-semester/VarietyTrial1_summer_2019_PlantHeight.csv")
-VT_TotalData <- merge(VTdata, data2, by=c("Column", "Row", "Block"))
+VT_TotalData <- merge(VTdata, data2, by = c("Column", "Row", "Block"))
 VT_H <- select(VT_TotalData, Year, Month, Day, Block, Row, Column, Rep, Height_cm, Variety)
 VT_H_by_day <- VT_H %>%
   group_by(Year, Month, Day, Variety) %>%

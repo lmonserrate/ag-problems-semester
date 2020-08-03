@@ -16,5 +16,5 @@ install.packages("agricolae")
 library(agricolae)
 HSD_resultsPP1 <- HSD.test(resultsPP1, "Variety", group = TRUE, console = TRUE, main = "Comparison of Final Plant Heights across varieties - 05/01/2019")
 
-lm_resultsPP1 <- lm(Height_cm ~ Variety, data=PP1_FinalHeights)
+lm_resultsPP1 <- lm(Height_cm ~ Variety, data = PP1_FinalHeights)
 summary(lm_resultsPP1)
